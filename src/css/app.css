@@ -1,0 +1,393 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+
+/* Hides the content area until we are ready to display after paddings have been adjusted. 
+    oj-complete is a marker class that is applied by the appController 
+    after adjusting the content area. */
+.oj-applayout-content:not(.oj-complete) {
+    visibility: visible;
+}
+
+.demo-james-icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo-profile-name {
+    font-size: 1.714rem;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 42px;
+}
+
+.demo-app-name {
+    padding-top: 40px;
+    color: #979899;
+}
+
+
+
+
+/* 
+Login
+*/
+
+.loginBG{
+    background: url("images/loginBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.loginBG .oj-form-layout{
+    border:none !important;
+    margin-top: 120px;
+}
+
+.loginBG input{
+    color: white;
+    padding-left: 10px;
+}
+
+
+.demo-logo-icon{
+    max-width: 350px;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30%;
+    content:url("images/userLoginIcon.png");
+}
+
+
+.oj-hybrid-applayout-header, .oj-hybrid-applayout-header-no-border {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #000000;
+    background-color: #d6260c;
+    padding: 0 1rem 0 1rem;
+}
+
+.oj-applayout-fixed-top, .oj-hybrid-applayout-navbar-fixed-top {
+    top: 0;
+    position: relative;
+}
+
+#daashID .oj-applayout-content{
+    min-height: calc(100vh - 57px);
+    background: url("images/loginBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.homeBtnLayout{
+    width: 100%;
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.homeBtnLayout .oj-button{
+    height: 60px;
+    display: block;
+    margin-bottom: 4px;
+    vertical-align: middle;
+    font-size: 1.125rem;
+    background: white;
+    border-radius: 10px;
+    width: 250px;
+    margin: auto auto;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.oj-button.oj-active.oj-button-half-chrome .oj-button-button{
+    background: #d6260c;
+    border-radius: 10px;
+    outline: none;
+    border-color:transparent;
+}
+
+
+#daashID .oj-button-jqui.oj-default.oj-button-half-chrome,#daashID .oj-button-jqui.oj-focus-only.oj-button-half-chrome, #daashID .oj-button.oj-default.oj-button-half-chrome .oj-button-button,#daashID .oj-button.oj-focus-only.oj-button-half-chrome .oj-button-button {
+    text-shadow: none;
+    color: #d6260c;
+}
+
+
+#scanResult{
+    min-height: calc(100vh - 30px);
+    background: url("images/dash_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.loginBG .oj-button.oj-active.oj-button-half-chrome .oj-button-button .oj-button-label .oj-button-text, .buttonSet .oj-button.oj-active.oj-button-half-chrome .oj-button-button .oj-button-label .oj-button-text{
+    color:white !important;
+}
+
+#loginBtn .oj-button-text, .buttonSet oj-button .oj-button-text{
+    color:#d6260c;
+}
+
+.labelSt{
+    color:#d8d8d8;
+    line-height: 28px;
+}
+
+.certTpl-QR{
+    position: absolute;
+    left: -6px;
+    bottom: -7px;
+}
+.certTpl-QR canvas {
+    width: 6vw;
+}
+
+.buttonSet .oj-button{
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    border: 1px solid #bbbbbb;
+    margin-top: 10px;
+}
+
+
+#dtT1{
+    background: url(images/t1.jpg);
+    background-size: cover;
+    top: 0;
+    max-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 350px;
+    height: 490px;
+}
+
+#dtT21{
+    background: url(images/t21.jpg);
+    background-size: cover;
+    top: 0;
+    left: 1px;
+    max-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 338px;
+    height: 186px;
+}
+
+#dtT22{
+    background: url(images/t22.jpg);
+    background-size: cover;
+    top: 0;
+    max-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 338px;
+    height: 82px;
+}
+
+#dtT3{
+    background: url(images/t3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    max-height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 350px;
+    height: 300px;
+}
+
+
+.shareMidSession{
+    background-color: #ffffff;
+    position: relative;
+    height: auto;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: gray;
+    margin-bottom: 10px;
+}
+
+.floatWords{
+    width: 350px;
+    font-size: 0.8em;
+    color: #58676a;
+    font-weight: lighter;
+}
+
+.hashLineCss{
+    position: absolute;
+    top: 140px;
+    left: 0px;
+    max-width: 600px;
+    transform: rotate(-45deg);
+    box-shadow: slategray;
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: rgba(158, 223, 239, 0.7);
+    border-color: rgba(158, 223, 239, 0.7);
+    padding: 6px;
+}
+
+.hashLineCss2{
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    max-width: 600px;
+    transform: rotate(-45deg);
+    box-shadow: slategray;
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: rgba(158, 223, 239, 0.7);
+    border-color: rgba(158, 223, 239, 0.7);
+    padding: 6px;
+}
+
+
+.hashLineCss3{
+    position: absolute;
+    top: 720px;
+    left: 20px;
+    max-width: 600px;
+    transform: rotate(-45deg);
+    box-shadow: slategray;
+    font-size: 1.5em;
+    color: #ffffff;
+    background-color: rgba(158, 223, 239, 0.7);
+    border-color: rgba(158, 223, 239, 0.7);
+    padding: 6px;
+}
+
+
+.qr_bg{
+    background: url(images/scan_bg.png);
+    background-size: cover;
+    top: 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.qr_bg_color{
+    background: rgba(74, 74, 74, 0.63);
+}
+
+#scan_page .oj-flex-items-pad > .oj-flex > .oj-flex-item, .oj-flex.oj-flex-items-pad > .oj-flex-item {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.red_color{
+    color: #d6260b;
+}
+
+.scan_rs_label{
+    margin-left: 30px;
+    font-size: 1.0em;
+    color: white;
+
+}
+
+
+#qrcode div{
+    margin: 0 auto !important;
+}
+
+.floatWords p{
+    position: absolute;
+}
+
+#buttonSetting .oj-button-text{
+    color: white;
+}
+
+#t2Table{
+    overflow: visible;
+    font-size: 9px;
+    color: #58676a;
+    border: 1px solid #8a9598;
+    width: 335px;
+    margin-left: 4px;
+    margin-top: -21px;
+}
+
+#t2Table .oj-table-body , #t2Table table thead tr th span{
+    color: #58676a;
+}
+
+oj-popup .oj-popup-content{
+    text-align: center;
+}
+
+.oj-table-column-header-cell {
+    line-height: initial;
+}
+
+.oj-inputtext , .oj-inputpassword{
+    border-bottom: 1px solid #e80000;
+}
+
+.set_header{
+    margin: 20px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    font-family: inherit;
+    font-weight: 500;
+    color: #e80000;
+    border-bottom: 1px solid red;
+}
+
+.oj-hybrid.oj-platform-ios.oj-platform-cordova.oj-hybrid-statusbar-spacer .oj-hybrid-applayout-header, .oj-hybrid.oj-platform-ios.oj-platform-cordova.oj-hybrid-statusbar-spacer .oj-hybrid-applayout-header-no-border {
+    padding-top: 30px;
+    min-height: 64px;
+}
+
+.oj-inputtext:not(.oj-disabled):not(.oj-read-only) .oj-inputtext-input:focus, .oj-inputpassword:not(.oj-disabled):not(.oj-read-only) .oj-inputpassword-input:focus, .oj-textarea:not(.oj-disabled):not(.oj-read-only) .oj-textarea-input:focus, .oj-inputtext-nocomp:not([disabled]):not([readonly]):focus, .oj-inputpassword-nocomp:not([disabled]):not([readonly]):focus, .oj-textarea-nocomp:not([disabled]):not([readonly]):focus {
+    border-color: transparent;
+}
+
+.oj-platform-android .oj-flex-middle{
+    text-align: center;
+    display: block;
+    font-size: 1.4em;
+    padding-top: 1px;
+    color: white;
+}
+
+.oj-platform-ios .oj-flex-middle{
+    font-size: 1.4em;
+    padding-top: 1px;
+    color: white;
+    left: 50%;
+    position: inherit;
+    position: -webkit-sticky;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0;
+}

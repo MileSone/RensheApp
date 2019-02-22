@@ -1,0 +1,47 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+-->
+<div id="daashID" class="oj-hybrid-applayout-page">
+    <div class="oj-applayout-fixed-top">
+        <!--
+         ** Oracle JET V5.2.0 hybrid mobile application header pattern.
+         ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+         ** more information on how to use this pattern.
+        -->
+        <header role="banner" class="oj-hybrid-applayout-header oj-flex-bar">
+
+            <div class="oj-flex-bar-start">
+                <oj-button id='button3' on-oj-action='[[CYaction]]' display='icons'>
+                    <img slot="startIcon" 
+                         src="css/images/search_icon.png" 
+                         alt="search" 
+                         width="28" height="28"/>Button 3
+                </oj-button>
+            </div>
+            <div role="heading" class="oj-hybrid-applayout-bar-title oj-flex-middle">
+
+            </div>
+            <div class="oj-flex-bar-end">
+                <img slot="startIcon" 
+                     src="css/images/home_nav.png" 
+                     alt="home" 
+                     width="28" height="28"/>
+            </div>
+        </header>
+    </div>
+    <!-- This is where your main page content will be loaded -->
+    <div class="oj-applayout-content">
+        <div role="main" class="oj-hybrid-applayout-content">
+            <div class="oj-hybrid-padding">
+                <div class="homeBtnLayout">
+                <oj-button id='button1' on-oj-action='[[ZJaction]]' data-bind="visible: isOrg().length>0">我是中介机构</oj-button>
+                <oj-button id='button2' on-oj-action='[[CYaction]]'>我要查验</oj-button>
+                <oj-button id='button3' on-oj-action='[[ZZaction]]' data-bind="visible: !isOrg().length>0">我的证照</oj-button>
+                    <oj-button id='button2' on-oj-action='[[STaction]]'>设置</oj-button>
+                    <oj-button id='button4' on-oj-action='[[LOaction]]'>登出</oj-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,136 @@
+<div class="oj-applayout-fixed-top">
+    <!--
+     ** Oracle JET V5.2.0 hybrid mobile application header pattern.
+     ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+     ** more information on how to use this pattern.
+    -->
+    <header role="banner" class="oj-hybrid-applayout-header oj-flex-bar">
+
+        <div class="oj-flex-bar-start">
+            <oj-button id='button3' on-oj-action='[[bbuttonClick]]' display='icons'>
+                <img slot="startIcon"
+                     src="css/images/back_icon.png"
+                     alt="search"
+                     width="28" height="28"/>Button 3
+            </oj-button>
+        </div>
+        <div role="heading" class="oj-hybrid-applayout-bar-title oj-flex-middle">
+            <div>
+                设置
+            </div>
+        </div>
+        <div class="oj-flex-bar-end" style="visibility: hidden;">
+            <oj-button id='button3'  display='icons'>
+                <img slot="startIcon"
+                     src="css/images/home_nav.png"
+                     alt="home"
+                     width="28" height="28"/>
+            </oj-button>
+        </div>
+    </header>
+</div>
+
+<div>
+    <div class='oj-form' style="background: white;">
+        <div class='oj-flex-bar' style="    padding: 20px;">
+            <div class='oj-flex-bar-start'>
+                <oj-label for='input' show-required="[[isRequired]]" class="oj-label-inline"
+                          help.definition='[[helpDef]]'>服务器URL:
+                </oj-label>
+            </div>
+            <div class='oj-flex-bar-middle'>
+                <oj-input-text id="input2" required="[[isRequired]]" value="{{urlText}}"></oj-input-text>
+            </div>
+        </div>
+
+        <div class='oj-flex-bar' style="    padding: 20px;">
+            <div class='oj-flex-bar-start'>
+                <oj-label for='input' show-required="[[isRequired]]" class="oj-label-inline"
+                          help.definition='[[helpDef1]]'>区块链URL:
+                </oj-label>
+            </div>
+            <div class='oj-flex-bar-middle'>
+                <oj-input-text id="input3" required="[[isRequired]]" value="{{urlText1}}"></oj-input-text>
+            </div>
+        </div>
+
+        <div style="width: 100%;text-align: center;">
+            <oj-button id='buttonSetting' on-oj-action='[[setBCinfo]]' style="        width: 90%;
+    margin: 0 auto;
+    background: #d6260c;
+    border-radius: 10px;
+    margin-top: 20px;
+        margin-bottom: 30px;
+">更改
+            </oj-button>
+
+        </div>
+
+        <div class="set_header">
+
+            Oracle 区块链云服务信息
+
+        </div>
+        <div style="padding: 0 20px;">
+
+            显示区块链云服务当前的运行状态，包括服务器情况,区块情况
+
+        </div>
+        <div class="set_header">
+
+            Oracle 区块链云服务信息
+
+        </div>
+
+        <div class='oj-flex-bar' style="    padding: 20px;">
+            <div class='oj-flex-bar-start'>
+                <div>运行的节点数</div>
+            </div>
+            <div class='oj-flex-bar-end'>
+                <div data-bind="text:info1">5</div>
+            </div>
+        </div>
+        <div class='oj-flex-bar' style="    padding: 20px;">
+            <div class='oj-flex-bar-start'>
+                <div>停止的节点数</div>
+            </div>
+            <div class='oj-flex-bar-end'>
+                <div data-bind="text:info2">5</div>
+            </div>
+        </div>
+        <div class='oj-flex-bar' style="    padding: 20px;">
+            <div class='oj-flex-bar-start'>
+                <div>健康状态</div>
+            </div>
+            <div class='oj-flex-bar-end'>
+                <div data-bind="text:info3">5</div>
+            </div>
+        </div>
+
+
+        <div class="set_header">
+
+            超级账本信息
+
+        </div>
+        <div class='oj-flex-bar' style="    padding: 20px;">
+            <div class='oj-flex-bar-start'>
+                <div>区块数</div>
+            </div>
+            <div class='oj-flex-bar-end'>
+                <div data-bind="text:info4">5</div>
+            </div>
+        </div>
+        <div class='oj-flex-bar' style="    padding: 20px;">
+            <div class='oj-flex-bar-start'>
+                <div>交易活动</div>
+            </div>
+            <div class='oj-flex-bar-end'>
+                <div data-bind="text:info5">5</div>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+    </div>
+</div>

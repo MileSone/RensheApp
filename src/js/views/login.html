@@ -1,0 +1,42 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+-->
+<div class="loginBG"  style="z-index: 999">
+    <div class="demo-logo-icon"></div> 
+ 
+    <div id="form-container" >
+        <div class="oj-form-layout">
+            <div class="oj-form oj-md-labels-inline">
+                <div class="oj-flex oj-flex-items-pad no-border" style="border-bottom: none;">
+                    <div class="oj-sm-3 oj-md-3" style="text-align:right">
+                        <!--<div class="oj-user-icon"></div>-->
+                        <div  class="labelSt">用户名:</div>
+                    </div>
+                    <div class="oj-sm-9 oj-md-9 oj-flex-item" style="text-align:left">
+                        <oj-input-text id="control1"  value="{{username}}" placeholder="用户名/手机号" style="     max-width: 90%;"></oj-input-text>
+                    </div>
+                </div>
+                <div class="oj-flex oj-flex-items-pad no-border" style="border-bottom: none;">
+                    <div class="oj-sm-3 oj-md-3" style="text-align:right">
+                        <!--<div class="oj-pass-icon"></div>-->
+                        <div  class="labelSt">密&nbsp;&nbsp;&nbsp;&nbsp;码:</div>
+                    </div>
+                    <div class="oj-sm-9 oj-md-9 oj-flex-item" style="text-align:left">
+                        <oj-input-password id="control3"  value="{{password}}"  style="    max-width: 90%;"></oj-input-password>
+                    </div>
+                </div>
+                <div class="oj-flex-item oj-sm-8 oj-md-8">
+                </div>
+            </div>
+
+            <div class="oj-flex no-border" style="text-align:center;" >
+                <oj-button id='loginBtn' on-click='[[buttonClick]]' style="width:80%;margin:0 auto;background:white;border-radius: 10px;margin-top:20px;">
+                    登陆
+                </oj-button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>

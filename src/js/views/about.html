@@ -1,0 +1,86 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+-->
+<div class="oj-hybrid-applayout-page">
+    <div class="oj-applayout-fixed-top">
+        <!--
+         ** Oracle JET V5.2.0 hybrid mobile application header pattern.
+         ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+         ** more information on how to use this pattern.
+        -->
+        <header role="banner" class="oj-hybrid-applayout-header oj-flex-bar">
+
+            <div class="oj-flex-bar-start">
+                <oj-button id='button3' on-oj-action='[[bbuttonClick]]' display='icons'>
+                    <img slot="startIcon" 
+                         src="css/images/back_icon.png" 
+                         alt="search" 
+                         width="28" height="28"/>Button 3
+                </oj-button>
+            </div>
+            <div role="heading" class="oj-hybrid-applayout-bar-title oj-flex-middle" >
+                <div data-bind="text: titleName">
+                </div>
+            </div>
+            <div class="oj-flex-bar-end">
+                <oj-button id='button3' on-oj-action='[[homebuttonClick]]' display='icons'>
+                    <img slot="startIcon" 
+                         src="css/images/home_nav.png" 
+                         alt="home" 
+                         width="28" height="28"/>
+                </oj-button>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="oj-applayout-content">
+        <div role="main" class="oj-hybrid-applayout-content">
+            <div class="oj-hybrid-padding"> 
+
+
+                <div style="    padding-bottom: 15px;font-size: 1.3em;">
+                    <div><span>最后阅览次数：</span><span class="red_color">10</span></div>
+                    <br/>
+                    <div><span>最后阅览公司：</span><span class="red_color">深圳市甲骨文公司</span></div>
+                    <br/>
+                    <div><span>最后阅览时间：</span><span class="red_color">2018-08-08</span></div>
+                </div>
+
+
+                <div>
+                    <div data-bind="ojModule: modulePath" class="shareMidSession">
+                    </div>
+                </div>
+
+
+                <div class="buttonSet">
+                    <oj-button  id="1" on-oj-action = '[[shareQR]]'>
+                        共享一天
+                    </oj-button>
+                    <oj-button id="7" on-oj-action='[[shareQR]]'>
+                        共享一周
+                    </oj-button>
+                    <oj-button id="30" on-oj-action='[[shareQR]]'>
+                        共享一月
+                    </oj-button>
+                </div>
+
+                <div id="popView">
+                    <oj-popup style="display:none;border-radius: 10px;" id="popup1"         tail="none" position.my.horizontal="center" position.my.vertical="center"
+                              position.at.horizontal="center" position.at.vertical="center"
+                              position.of="window" position.offset.y="-10"
+                              modality="modal" >
+                        <br/>
+                        <span id="qrcode"></span>
+                        <br/>
+                        <div data-bind="text: experTimer" style="margin-top: 20px;"></div>
+                        <br/>
+                    </oj-popup>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

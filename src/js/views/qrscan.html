@@ -1,0 +1,72 @@
+<div class="oj-applayout-fixed-top">
+    <!--
+     ** Oracle JET V5.2.0 hybrid mobile application header pattern.
+     ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+     ** more information on how to use this pattern.
+    -->
+    <header role="banner" class="oj-hybrid-applayout-header oj-flex-bar">
+
+        <div class="oj-flex-bar-start">
+            <oj-button id='button3' on-oj-action='[[bbuttonClick]]' display='icons'>
+                <img slot="startIcon" 
+                     src="css/images/back_icon.png" 
+                     alt="search" 
+                     width="28" height="28"/>Button 3
+            </oj-button>
+        </div>
+        <div role="heading" class="oj-hybrid-applayout-bar-title oj-flex-middle" >
+
+            <div>
+                我要查验
+            </div>
+        </div>
+        <div class="oj-flex-bar-end">
+            <oj-button id='button3' on-oj-action='[[scanbuttonClick]]' display='icons'>
+                <img slot="startIcon" 
+                     src="css/images/search_icon.png" 
+                     alt="home" 
+                     width="28" height="28"/>
+            </oj-button>
+        </div>
+    </header>
+</div>
+
+<div id="scan_page" style="background: transparent !important;">
+    <div style="width: 100%;height: 25vh;" class="qr_bg_color"></div>
+
+    <div class="oj-flex oj-flex-items-pad" style="width: 100%;height: auto;">
+        <div class="oj-sm-2 oj-flex-item qr_bg_color">
+
+        </div>
+        <div class="oj-sm-8 oj-flex-item" style="content: url(css/images/scan_center.png);
+    background: transparent;
+    width: 100%;
+    height: 100%;">
+
+        </div>
+        <div class="oj-sm-2 oj-flex-item qr_bg_color">
+
+        </div>
+    </div>
+
+    <div style="width: 100%;height: calc( 100vh - 25vh - 250px - 57px);" class="qr_bg_color"></div>
+</div>
+
+
+<div id="scanResult" data-bind="visible: showResult">
+    <div data-bind="visible:validResult().length>0">
+        <div class="scan_rs_label" style="margin-top: 80px;"><span>电子证件：</span><span data-bind="text: valueLog">有效</span></div>
+        <div class="scan_rs_label" style="margin-top: 20px;"><span>区块编码：</span><span data-bind="text: hashKey">123213121sadasadsa</span></div>
+    </div>
+    <div data-bind="visible:!validResult().length>0">
+
+        <div class="scan_rs_label" style="margin-top: 80px;"><span>
+            <img slot="startIcon" src="css/images/alerticon.png" alt="home" width="28" height="28" style="position: relative;top: 7px;"/></span>
+            <span>  共享电子证件照已过期</span></div>
+    </div>
+
+    <div>
+        <div data-bind="ojModule: modulePath" class="shareMidSession" style="width: 90%;margin: 0 auto;margin-top: 10px;">
+        </div>
+    </div>
+</div>
